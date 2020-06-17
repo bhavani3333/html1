@@ -1,0 +1,64 @@
+<html>
+	<head>
+		<style>
+		 #a{
+			padding:8px;
+			animation-name: example;
+			animation-duration: 10s;
+			
+			}
+
+			@keyframes example {
+			  0%   {color: red;}
+			  20%  {color: yellow;}
+			  40%  {color: blue;}
+			  60%  {color: pink;}
+			  80%  {color: green;}
+			  100% {color: orange;}
+		 }	
+		</style>
+	</head>
+	<body>
+	<h2 id="a">MY RATING FOR JAVASCRIPT</h2>
+	<input type="button" value="1" id="d1" onclick="colour1()" style="margin-left:7px;">
+	<input type="button" value="2" id="d2" onclick="colour2()">
+	<input type="button" value="3" id="d3" onclick="colour3()">
+	<input type="button" value="4" id="d4" onclick="colour4()">
+	<input type="button" value="5" id="d5" onclick="colour5()">
+	<p id="p1"></p>
+	
+	</body>
+	<script>
+		function colour1(){
+			document.getElementById("d1").style.backgroundColor = "#00bfff";
+			p1.innerHTML="my rating is: 1.0"
+		}
+		function colour2(){
+			document.getElementById("d1").style.backgroundColor = "#00bfff";
+			document.getElementById("d2").style.backgroundColor = "#00bfff";
+			p1.innerHTML="my rating is: 2.0"
+		}
+		function colour3(){
+			document.getElementById("d1").style.backgroundColor = "#00bfff";
+			document.getElementById("d2").style.backgroundColor = "#00bfff";
+			document.getElementById("d3").style.backgroundColor = "#00bfff";
+			p1.innerHTML="my rating is: 3.0"
+		}
+		function colour4(){
+			document.getElementById("d1").style.backgroundColor = "#00bfff";
+			document.getElementById("d2").style.backgroundColor = "#00bfff";
+			document.getElementById("d3").style.backgroundColor = "#00bfff";
+			document.getElementById("d4").style.backgroundColor = "#00bfff";
+			p1.innerHTML="my rating is: 4.0"
+		}
+		function colour5(){
+			document.getElementById("d1").style.backgroundColor = "#00bfff";
+			document.getElementById("d2").style.backgroundColor = "#00bfff";
+			document.getElementById("d3").style.backgroundColor = "#00bfff";
+			document.getElementById("d4").style.backgroundColor = "#00bfff";
+			document.getElementById("d5").style.backgroundColor = "#00bfff";
+			p1.innerHTML="my rating is: 5.0"
+		}
+
+	</script>
+</html>
