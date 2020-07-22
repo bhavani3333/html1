@@ -1,0 +1,77 @@
+<html>
+	<head>
+		<style>
+			#d1{
+				position:absolute;
+				width:600px;
+				border:3px;
+				margin-left:150px;
+				padding-left:20px;
+				background-color:#ffe6e6;
+
+			
+			}
+		</style>
+	</head>
+	<body>
+		<div id="d1">
+		<form name="myForm" action="file:///C:/Users/Avani/Desktop/js/form.html" onsubmit="return validateForm()" method="post">
+			<h1>Application Form</h1>
+			<p>First name</p>
+			<input type="text" name="first name">
+			<p>Last name name</p>
+			<input type="text" name="last name">
+			<p>MailID</p>
+			<input type="text" name="mail">
+			<p>Mobile No.</p>
+			<input type="text" name="mobile"><br><br>
+			<div>male
+			<input type="radio" name="gender"></div>
+			<div>female
+			<input type="radio" name="gender"></div>
+			<div>other
+			<input type="radio" name="gender"></div><br>
+			<label>highest degree</label>
+			<select name="degree">
+				<option>SELECT</option>
+				<option>B.TECH</option>
+				<option>B.E</option>
+				<option>B.SC</option>
+				<option>OTHERS</option>
+			</select>
+			<p>college</p>
+			<input type="text" name="college">
+			<p>pecentage</p>
+			<input type="text" name="pecentage"><br><br>
+			<label>current location</label>
+			<select name="location">
+				<option>SELECT</option>
+				<option>hyderabad</option>
+				<option>bangolore</option>
+				<option>mumbai</option>
+				<option>chennai</option>
+				<option>delhi</option>
+				<option>others</option>
+			</select><br>
+			<p><input type="checkbox">agree all terms and conditions</p>
+			<button id="b1" onclick="validateForm()">submit</button>
+		</div>
+	</body>
+	<script>
+		function validateForm() {
+  var x = document.forms["myForm"]["first name"].value;
+  var y = document.forms["myForm"]["mail"].value;
+  if (x == "") {
+    alert("required fields must be filled out");
+	}
+  else if(y==""){
+	alert("required fields must be filled out");
+  }
+  else
+  {
+	alert("register successfully");
+  }
+}
+	</script>
+
+</html>
